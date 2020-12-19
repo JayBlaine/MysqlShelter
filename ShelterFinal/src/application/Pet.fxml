@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainPane" prefHeight="324.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.PetController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="btnHome" layoutX="14.0" layoutY="278.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
+    <Label layoutX="41.0" layoutY="20.0" text="Name:" />
+    <Label layoutX="42.0" layoutY="63.0" text="Pet ID:" />
+    <Label layoutX="54.0" layoutY="105.0" text="Type:" />
+    <Label layoutX="46.0" layoutY="138.0" text="Breed:" />
+    <Label layoutX="263.0" layoutY="22.0" text="Gender:" />
+    <Label layoutX="265.0" layoutY="63.0" text="Weight:" />
+    <Label layoutX="285.0" layoutY="103.0" text="Age:" />
+    <Label layoutX="245.0" layoutY="140.0" text="Vaccinated:" />
+    <RadioButton fx:id="radYesVac" layoutX="338.0" layoutY="140.0" mnemonicParsing="false" text="Yes">
+      <toggleGroup>
+        <ToggleGroup fx:id="vac" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="radNoVac" layoutX="409.0" layoutY="141.0" mnemonicParsing="false" selected="true" text="No" toggleGroup="$vac" />
+    <MenuButton fx:id="menuType" layoutX="107.0" layoutY="101.0" mnemonicParsing="false" text="Type">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#setDog" text="Dog" fx:id="Dog" />
+        <MenuItem mnemonicParsing="false" onAction="#setCat" text="Cat" fx:id="Cat" />
+      </items>
+    </MenuButton>
+    <TextField fx:id="txtName" layoutX="107.0" layoutY="14.0" prefWidth="139.0" promptText="String" />
+    <TextField id="txtName" fx:id="txtPid" layoutX="107.0" layoutY="60.0" prefWidth="139.0" promptText="Int" text="" />
+    <TextField id="txtName" fx:id="txtBreed" layoutX="107.0" layoutY="138.0" prefWidth="125.0" promptText="String" text="" />
+    <Slider fx:id="slidWeight" blockIncrement="1.0" layoutX="338.0" layoutY="57.0" majorTickUnit="40.0" max="200.0" minorTickCount="1" prefWidth="198.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" />
+    <RadioButton fx:id="radM" layoutX="338.0" layoutY="22.0" mnemonicParsing="false" selected="false" text="M">
+      <toggleGroup>
+        <ToggleGroup fx:id="gender" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="radF" layoutX="417.0" layoutY="22.0" mnemonicParsing="false" selected="true" text="F" toggleGroup="$gender" />
+    <TextField fx:id="txtAge" layoutX="336.0" layoutY="103.0" prefWidth="38.0" promptText="Int" />
+    <Button fx:id="btnAdd" layoutX="107.0" layoutY="278.0" mnemonicParsing="false" onAction="#addPet" text="Add" />
+    <Label fx:id="lblError" layoutX="97.0" layoutY="244.0" text="">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="21.0" layoutY="189.0" text="Shelter  Address:" />
+    <TextField fx:id="txtDept" layoutX="158.0" layoutY="186.0" prefWidth="169.0" promptText="String" />
+  </children>
+</AnchorPane>

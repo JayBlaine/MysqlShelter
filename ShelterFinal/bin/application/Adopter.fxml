@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainPane" prefHeight="324.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.AdopterController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="btnHome" layoutX="14.0" layoutY="278.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
+    <TextField fx:id="txtAddress" editable="true" layoutX="93.0" layoutY="38.0" prefWidth="200.0" promptText="String" />
+    <Label layoutX="14.0" layoutY="38.0" text="Address:" />
+    <Label layoutX="27.0" layoutY="76.0" text="Phone:" />
+    <Label layoutX="30.0" layoutY="113.0" text="Name:" />
+    <TextField fx:id="txtPhone1" layoutX="93.0" layoutY="73.0" prefWidth="43.0" text="" />
+    <TextField fx:id="txtName" layoutX="93.0" layoutY="111.0" prefWidth="200.0" promptText="String" />
+    <TextField fx:id="txtPhone2" layoutX="160.0" layoutY="73.0" prefWidth="43.0" text="" />
+    <TextField fx:id="txtPhone3" layoutX="231.0" layoutY="73.0" prefWidth="51.9998779296875" text="" />
+    <Label layoutX="145.0" layoutY="76.0" text="-" />
+    <Label layoutX="215.0" layoutY="79.0" text="-" />
+    <Button fx:id="btnAdd" layoutX="106.0" layoutY="278.0" mnemonicParsing="false" onAction="#addAdopter" text="Add" />
+    <Label fx:id="lblError" layoutX="93.0" layoutY="239.0" text="">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label layoutX="237.0" layoutY="150.0" text="Shelter Visited:" />
+    <Label layoutX="309.0" layoutY="112.0" text="Pet ID Adopted:" />
+    <Label font="$x1" layoutX="311.0" layoutY="76.0" text="Optional" />
+    <TextField fx:id="txtShelNum" layoutX="362.0" layoutY="148.0" prefWidth="181.0" promptText="String" />
+    <TextField fx:id="txtAdopId" layoutX="443.0" layoutY="114.0" prefWidth="55.0" promptText="Int" />
+  </children>
+</AnchorPane>

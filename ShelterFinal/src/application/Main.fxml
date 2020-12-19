@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainPane" prefHeight="324.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="btnEmp" layoutX="96.0" layoutY="119.0" mnemonicParsing="false" onAction="#openEmp" prefHeight="59.0" prefWidth="96.0" text="Employee&#10;Control" textAlignment="CENTER" underline="false">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="btnAdop" font="$x1" layoutX="359.0" layoutY="119.0" mnemonicParsing="false" onAction="#openAdop" prefHeight="59.0" prefWidth="96.0" text="Adopter&#10;Control" textAlignment="CENTER" underline="false" />
+    <Button fx:id="btnPet" font="$x1" layoutX="96.0" layoutY="198.0" mnemonicParsing="false" onAction="#openPet" prefHeight="59.0" prefWidth="96.0" text="Pet&#10;Control" textAlignment="CENTER" underline="false" />
+    <Button fx:id="btnShel" font="$x1" layoutX="359.0" layoutY="198.0" mnemonicParsing="false" onAction="#openShel" prefHeight="59.0" prefWidth="96.0" text="Shelter&#10;Control" textAlignment="CENTER" underline="false" />
+    <Label fx:id="lblTitle" layoutX="162.0" layoutY="30.0" text="Welcome to Shelter Control!" textAlignment="CENTER">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Button fx:id="btnRun" font="$x2" layoutX="221.0" layoutY="170.0" mnemonicParsing="false" onAction="#runQueries" text="Run Test &#10;Queries" textAlignment="CENTER" />
+  </children>
+</AnchorPane>

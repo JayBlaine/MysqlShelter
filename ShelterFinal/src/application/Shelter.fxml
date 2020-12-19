@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainPane" prefHeight="324.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ShelterController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="btnHome" layoutX="14.0" layoutY="278.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
+    <Label fx:id="lblDept" layoutX="25.0" layoutY="14.0" text="Dept_ID:" />
+    <Label fx:id="lblAddress" layoutX="25.0" layoutY="49.0" text="Address:" />
+    <Label fx:id="lblCity" layoutX="58.0" layoutY="93.0" text="City:" />
+    <Label fx:id="lblState" layoutX="48.0" layoutY="138.0" text="State:" />
+    <Label fx:id="lblPets" layoutX="7.0" layoutY="175.0" text="Initial Pets:" />
+    <TextField fx:id="txtDept" layoutX="104.0" layoutY="10.0" prefWidth="200.0" promptText="Integer" />
+    <TextField fx:id="txtAddress" editable="true" layoutX="104.0" layoutY="46.0" prefWidth="200.0" promptText="String" />
+    <TextField fx:id="txtPets" layoutX="104.0" layoutY="175.0" prefWidth="200.0" promptText="Integer" />
+    <MenuButton fx:id="menuState" layoutX="104.0" layoutY="134.0" mnemonicParsing="false" text="State">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#setCA" text="CA" fx:id="CA" />
+        <MenuItem mnemonicParsing="false" onAction="#setNY" text="NY" fx:id="NY" />
+        <MenuItem mnemonicParsing="false" onAction="#setTX" text="TX" fx:id="TX" />
+      </items>
+    </MenuButton>
+    <Button fx:id="btnAdd" layoutX="114.0" layoutY="278.0" mnemonicParsing="false" onAction="#addShelter" text="Add" />
+    <TextField id="txtAddress" fx:id="txtCity" layoutX="104.0" layoutY="90.0" prefWidth="200.0" promptText="String" />
+    <Label fx:id="lblError" layoutX="104.0" layoutY="217.0" text="">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
